@@ -8,7 +8,6 @@ Developed @ One Month in NYC
 */
 
 body {
-	background: url('../images/cookie-monster.jpg');
 	/* the follow is the code to have the image display as a full page */
 	background-position: center;
 	background-attachment: fixed;
@@ -16,6 +15,29 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background: #000020;
+	background: #807E7F;
+	margin: 0;
+}
+
+.clear {
+        clear: both;
+}
+
+#navi{
+	float: right;
+	margin-right:3px;
+}
+
+.navigation_block{
+	float:left;
+	display:block;
+	padding: 2px;
+	border: 1px solid;
+}
+
+header{
+	text-align: center;
+	background: #E9ECEE;
+	padding: 5px;
 }
 
