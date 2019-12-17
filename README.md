@@ -2,7 +2,7 @@ PHONEBOOK
 =============
 -------------
 
-##Summary:
+## Summary:
 A simple phonebook, more like a contact list, made with phalcon php and volt where you'll be able to see your contact's info, add contacts and delete them.
 Contact table description:  
 
