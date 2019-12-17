@@ -5,10 +5,10 @@
 	</head>
 	<body>
 		<header>
-		<pstyle="margin:0">Hello volt</p>
+		<h1 style="margin:0">Hello volt</h1>
 		<nav>
 			<ul id="navi">
-				<li class="navigation_block">contacto</li>
+				<li class="navigation_block">about</li>
 				<li class="navigation_block">inicio</li>
 				<li class="navigation_block">idk</li>
 			</ul>
@@ -16,11 +16,18 @@
 		</nav>
 		</header>
 		<main>
-			<?php $myArray = ['Apple', 'Banana', 'Orange']; ?>
+			<?php $myArray = ['Apple', 'Banana', 'Orange', 'Tomato', 'Tangerine', 'Avocado']; ?>
 			<?php foreach ($myArray as $fruit) { ?>
-				<p>Fruta:</p>
-				<p><?= $fruit ?> </p>
+				<div class="box"> 
+				<p>Fruta: 
+			<?= $fruit ?> </p>
+				</div> 
 			<?php } ?>
 		</main>
+		<aside id="sidebar">
+			<ul>
+				<li>Hello sidebar</li>
+			</ul>
+		</aside>
 	</body>
 </html>

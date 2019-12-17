@@ -31,13 +31,38 @@ body {
 .navigation_block{
 	float:left;
 	display:block;
-	padding: 2px;
-	border: 1px solid;
+	padding: 0 30px 0 30px;;
 }
 
 header{
 	text-align: center;
-	background: #E9ECEE;
-	padding: 5px;
+	background: #539191;
+	padding: 0px;
+	color: #684933;
+	width:100%;
 }
 
+main{
+	width:75%;
+	height:100%;
+	background: #565656;
+	padding:0 0 10px 0;
+	overflow: auto;
+	float:left;
+}
+.box{
+	padding: 5px;
+	height:100px;
+	color: #539191;
+	border: 2px solid;
+	margin: 1px;
+}
+
+#sidebar{
+	width:20.5rem;
+	height:100%;
+	background: #684933;
+	color: #539191;
+	border: thick double #539191;
+	float:left;
+}
