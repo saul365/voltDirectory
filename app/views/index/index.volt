@@ -17,6 +17,7 @@
 		</header>
 		<main>
 			{% set myArray = {'Apple', 'Banana', 'Orange','Tomato','Tangerine','Avocado'} %}
+			<p>{{ prueba}}</p>
 			{% for fruit in myArray %}
 				<div class="box"> 
 				<p>Fruta: 

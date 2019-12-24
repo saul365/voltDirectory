@@ -17,6 +17,7 @@
 		</header>
 		<main>
 			<?php $myArray = ['Apple', 'Banana', 'Orange', 'Tomato', 'Tangerine', 'Avocado']; ?>
+			<p><?= $prueba ?></p>
 			<?php foreach ($myArray as $fruit) { ?>
 				<div class="box"> 
 				<p>Fruta: 
