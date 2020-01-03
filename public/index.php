@@ -3,7 +3,7 @@
 use Phalcon\Loader;
 use Phalcon\Di\FactoryDefault;
 use Phalcon\Mvc\View;
-use Phalcon\Mvc\Url as UrlProvider;
+use Phalcon\Url as UrlProvider;
 use Phalcon\Mvc\Application;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
 use Phalcon\Mvc\View\Engine\Volt;
@@ -83,7 +83,7 @@ $di->set(
 // ...
 
 $application = new Application($di);
-$response = $application->handle();
+$response = $application->handle($_SERVER['REQUEST_URI']);
 $response->send();
 
 
