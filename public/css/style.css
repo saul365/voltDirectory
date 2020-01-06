@@ -40,11 +40,12 @@ header{
 	padding: 0px;
 	color: #684933;
 	width:100%;
+	height:20%;
 }
 
 main{
 	width:75%;
-	height:100%;
+	height:78%;
 	background: #565656;
 	padding:0 0 10px 0;
 	overflow: auto;
@@ -52,7 +53,6 @@ main{
 }
 .box{
 	padding: 5px;
-	height:100px;
 	color: #539191;
 	border: 2px solid;
 	margin: 1px;
@@ -60,7 +60,7 @@ main{
 
 #sidebar{
 	width:20.5rem;
-	height:100%;
+	height:78%;
 	background: #684933;
 	color: #539191;
 	border: thick double #539191;

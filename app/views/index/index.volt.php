@@ -16,12 +16,12 @@
 		</nav>
 		</header>
 		<main>
-			<?php $myArray = ['Apple', 'Banana', 'Orange', 'Tomato', 'Tangerine', 'Avocado']; ?>
-			<p><?= $prueba ?></p>
-			<?php foreach ($myArray as $fruit) { ?>
+			<?php foreach ($contacts as $contact) { ?>
 				<div class="box"> 
-				<p>Fruta: 
-			<?= $fruit ?> </p>
+				<p>Name: <?= $contact['name'] ?></p>
+				<p>Phone: <?= $contact['phone'] ?></p>
+				<p>Email: <?= $contact['email'] ?></p>
+				<p>Company: <?= $contact['company'] ?></p>
 				</div> 
 			<?php } ?>
 		</main>

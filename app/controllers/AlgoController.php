@@ -6,11 +6,11 @@ class AlgoController extends Controller
     public function indexAction()
     {
 	    	
-		$prueba = $this->db->fetchAll(
+		$contacts = $this->db->fetchAll(
     		"SELECT * FROM contacts",
     		\Phalcon\Db\Enum::FETCH_ASSOC
 		);
-		$this->view->setVar('prueba', $prueba);
+		$this->view->setVar('contacts', $contacts);
 		$this->view->setVar('hi', "No creo que funcione");
 		$this->view->render('algo','index');
 
