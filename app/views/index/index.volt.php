@@ -18,10 +18,10 @@
 		<main>
 			<?php foreach ($contacts as $contact) { ?>
 				<div class="box"> 
-				<p>Name: <?= $contact['name'] ?></p>
-				<p>Phone: <?= $contact['phone'] ?></p>
-				<p>Email: <?= $contact['email'] ?></p>
-				<p>Company: <?= $contact['company'] ?></p>
+				<p>Name: <?= $contact->name ?></p>
+				<p>Phone: <?= $contact->phone ?></p>
+				<p>Email: <?= $contact->email ?></p>
+				<p>Company: <?= $contact->company ?></p>
 				</div> 
 			<?php } ?>
 		</main>

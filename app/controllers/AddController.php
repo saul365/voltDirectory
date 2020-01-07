@@ -6,6 +6,6 @@ class AddController extends Controller
     public function indexAction()
     {
       		//$this->assets->addCss('css/index.css');
-      		$this->view->setVar('prueba', $prueba);
+      		//$this->view->setVar('prueba', $prueba);
     }
 }
