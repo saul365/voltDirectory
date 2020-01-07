@@ -7,7 +7,12 @@ class IndexController extends Controller
     {
 		
       		$this->assets->addCss('css/index.css');
-      		$this->view->setVar('prueba', $prueba);
+		$contacts = $this->db->fetchAll(
+    		"SELECT * FROM contacts",
+    		\Phalcon\Db\Enum::FETCH_ASSOC
+		);
+		$this->view->setVar('contacts', $contacts);
+		//$this->view->render('index','index');
     }
 }
 
