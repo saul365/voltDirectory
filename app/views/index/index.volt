@@ -16,12 +16,16 @@
 		</nav>
 		</header>
 		<main>
+			{#
 			{% set myArray = {'Apple', 'Banana', 'Orange','Tomato','Tangerine','Avocado'} %}
 			<p>{{ prueba}}</p>
-			{% for fruit in myArray %}
+			#}
+			{% for contact in contacts %}
 				<div class="box"> 
-				<p>Fruta: 
-			{{ fruit}} </p>
+					<p>Name: {{contact.name}}</p>
+            				<p>Phone: {{contact.phone}}</p>
+            				<p>Email: {{contact.email}}</p>
+           				<p>Company: {{contact.company}}</p>
 				</div> 
 			{% endfor %}
 		</main>

@@ -7,10 +7,10 @@ class IndexController extends Controller
     {
 		
 		$this->assets->addCss('css/style.css');
-      $this->assets->addCss('css/index.css');
+      		//$this->assets->addCss('css/index.css');
 		//$this->view->render('index','index');
-		$prueba="HELLOOOOOO";
-      $this->view->setVar('prueba', $prueba);
+		$contacts=Contacts::find();
+      		$this->view->setVar('contacts', $contacts);
     }
 }
 
