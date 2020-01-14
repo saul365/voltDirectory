@@ -70,6 +70,7 @@ $di->set(
     function () {
         return new DbAdapter(
             [
+//'192.168.0.7',
                 'host'     => '192.168.0.7',
                 'username' => 'tutorial',
                 'password' => 'Mundo54/',

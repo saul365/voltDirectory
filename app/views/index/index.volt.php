@@ -5,31 +5,35 @@
 	</head>
 	<body>
 		<header>
-		<h1 style="margin:0">Hello volt</h1>
+		<h1>Hello volt</h1>
 		<nav>
-			<ul id="navi">
-				<li class="navigation_block">about</li>
-				<li class="navigation_block">inicio</li>
-				<li class="navigation_block">idk</li>
-			</ul>
-			<div class="clear"> </div> 
+			<a href="#">about</a>
+			<a href="/">Inicio</a>
+			<a href="#">IDK</a>
 		</nav>
 		</header>
 		<main>
 			
+			<div id="box"> 
 			<?php foreach ($contacts as $contact) { ?>
-				<div class="box"> 
+				<div class="item">
 					<p>Name: <?= $contact->name ?></p>
             				<p>Phone: <?= $contact->phone ?></p>
             				<p>Email: <?= $contact->email ?></p>
            				<p>Company: <?= $contact->company ?></p>
-				</div> 
+				</div>
 			<?php } ?>
+			</div> 
+			<aside>
+				<ul>
+					<li>Hello sidebar</li>
+					<li><a href="add">Add contact</a></li>
+				</ul>
+			</aside>
 		</main>
-		<aside id="sidebar">
-			<ul>
-				<li>Hello sidebar</li>
-			</ul>
-		</aside>
+		<footer>
+            		<p>hola</p>
+        	</footer>
+
 	</body>
 </html>

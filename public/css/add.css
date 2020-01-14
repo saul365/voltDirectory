@@ -1,0 +1,75 @@
+
+#box{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    background:darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+	
+}
+
+#options{
+    width: 90%;
+    background: black;
+}
+
+#options form{
+    width: 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#options label{
+    color: white;
+    font-size: 20px;
+    width: 20%;
+    height: 5%;
+    text-align: right;
+    margin-top: 3%;
+}
+
+#options input{
+
+    width: 65%;
+    height: 5%;
+    margin-top: 3%;
+
+}
+
+/*para el borde de abajo de los form*/
+input[type=text] {
+    background: black;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+
+input[type=email] {
+    background: black;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+
+  /*PARA EL BOTON*/
+
+
+input[type=submit]{
+    margin-top: 5%;
+    padding: 2%;
+    width: 25%;
+    background: white;
+    color: black;
+    border:none;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 800;
+}

@@ -5,6 +5,8 @@ class AddController extends Controller
 {
     public function indexAction()
     {
+	$this->assets->addCss('css/style.css');
+	$this->assets->addCss('css/add.css');
     }
     public function saveAction()
     {

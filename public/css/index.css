@@ -1,0 +1,13 @@
+
+#box{
+	color: #539191;
+	width:85%;
+	overflow: auto;
+}
+
+.item{
+	padding: 5px;
+	border: 2px solid;
+   	margin: 1px;
+}
+

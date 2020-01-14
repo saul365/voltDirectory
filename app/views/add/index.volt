@@ -1,19 +1,18 @@
 <html>
         <head>
                 <title>Saul Great Domain</title>
+		{{ assets.outputCss() }}
         </head>
         <header>
-                <h1 style="margin:0">Hello volt</h1>
+                <h1>Hello volt</h1>
                 <nav>
-                        <ul id="navi">
-                                <li class="navigation_block">about</li>
-                                <li class="navigation_block">inicio</li>
-                                <li class="navigation_block">idk</li>
-                        </ul>
-                        <div class="clear"> </div> 
+			<a href="#">about</a>
+			<a href="/">Inicio</a>
+			<a href="#">IDK</a>
                 </nav>
         </header>
         <main>
+		<div id="box">
                 <h2>Sign up using this form</h2>
                 {#
                 {% this.tag.form("signup/register") %}
@@ -23,24 +22,30 @@
                 <p><label for="company">Company</label>{% this.tag.texField("company")%}</p>
                 <p>{% this->tag->submitButton("Register") %}</p>
                 #}
+		<div id="options">
                 {{ form('add/save', 'method': 'post') }}
 
                 <label for='name'>Name</label>
                 {{ text_field('name', 'size': 40) }}
-
                 <label for='phone'>Phone</label>
                 {{ text_field('phone', 'size': 40) }}
-
-		<br/>
                 <label for='email'>Email</label>
 		{{ email_field('email', 'size': 40) }}
-
                 <label for='company'>Company</label>
                 {{ text_field('company', 'size': 10) }}
-
                 {{ submit_button('Send') }}
 
                 {{ end_form() }}
-
+		</div><!--- end form --->
+		</div><!-- end box -->
+		<aside>
+			<ul>
+				<li>Hello sidebar</li>
+				<li><a href="add">Add another contact</a></li>
+			</ul>
+		</aside>
         </main>
+		<footer>
+            		<p>hola</p>
+        	</footer>
 </html>

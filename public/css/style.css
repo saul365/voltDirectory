@@ -1,8 +1,7 @@
 /* 
 
-Project Name: Cookie Monster 
-Client: Cookie Monster
-Author: Chris Castiglione | www.twitter.com/castig | www.castig.org 
+Project Name: Directory
+Author: Saul Badillo | | www.saulgreatdomain.tech 
 Developed @ One Month in NYC 
 
 */
@@ -17,51 +16,67 @@ body {
 	background-size: cover;
 	background: #807E7F;
 	margin: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 .clear {
         clear: both;
 }
 
-#navi{
-	float: right;
-	margin-right:3px;
-}
-
-.navigation_block{
-	float:left;
-	display:block;
-	padding: 0 30px 0 30px;;
-}
-
 header{
-	text-align: center;
 	background: #539191;
-	padding: 0px;
 	color: #684933;
 	width:100%;
+	height: 15%;
+}
+
+header h1{
+	text-align: center;
+	margin:0;
+	height: 68%;
+}
+
+nav{
+	background: lightcoral;
+	padding-right: 5%;
+	/*flex*/
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 20px;
+	margin-right:5%;
+}
+
+nav a:nth-last-of-type(1){
+	margin-right: 0;
 }
 
 main{
-	width:75%;
-	height:100%;
 	background: #565656;
-	padding:0 0 10px 0;
-	overflow: auto;
-	float:left;
-}
-.box{
-	padding: 5px;
-	color: #539191;
-	border: 2px solid;
-	margin: 1px;
+	width:100%;
+	height:75%;
+	/*flex*/
+	display:flex;
+	flex-direction:row;
 }
 
-#sidebar{
-	width:20.5rem;
-	height:100%;
+
+aside{
+	width:15%;
 	background: #684933;
 	color: #539191;
 	border: thick double #539191;
-	float:left;
+}
+footer{
+	background:black;
+	color: white;
+	height: 10%;
+	overflow: auto;
+	text-align: center;
 }
